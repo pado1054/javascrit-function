@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+        function a(mid,end) { 
+        var result = "";
+        for (var i = 0; i < mid; ++i) {
+            result += "*";
+        }
+
+        for (var i = 0; i < 10 - mid; ++i) {
+            result += "_";
+        }
+
+        result += " + ";
+
+        for (var i = 0; i < end; ++i) {
+            result += "*";
+        }
+
+        for (var i = 0; i < 10 - end; ++i) {
+            result += "_";
+        }
+
+        result += " = ";
+
+        for (var i = 0; i < mid + end; ++i) {
+            result += "*";
+        }
+
+        for (var i = 0; i < 20 - (mid + end); ++i) {
+            result += "_";
+        }
+        return result;
+        }
+        
+        console.log(`A : ${a(10,8)}`);
+        console.log(`B : ${a(1,2)}`);
+        console.log(`C : ${a(9,5)}`);
+
+        </script>
+    </head>
+</html>
